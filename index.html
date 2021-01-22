@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Hands On 2</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<!--Header-->
+<header id="main-header">
+ 		<h2>Art Gallery</h2>
+</header>
+
+<!--Navigation Bar-->
+<form action="https://www.randyconnolly.com/tests/process.php" method="get">
+<nav class="main-nav">
+  <div class="container">
+  
+  
+  	<input type="search" placeholder="Search">
+  	Subject:
+  	<input type="radio" name="subject" value="History">History
+  	<span>
+  	<input type="radio" name="subject" value="Person">Person
+  	<span>
+  	<input type="radio" name="subject" value="Landscape">Landscape
+    
+    <span>
+  	<select name="Genre">
+  	<option value disabled selected>Select Genre</option>
+  	<option value="0">Baroque</option>
+  	<option value="1">Renaissance</option>
+  	<option value="2">Realism</option>
+  	</select>
+  	<input type="submit" value="Filter">
+  	
+  </div>
+</nav>
+
+
+
+
+
+<nav class="main-nav">
+<div class="container">
+  
+   <select name="Action">
+   <option value disabled selected>Bulk Actions</option>
+   <option value="0">Archive</option>
+   <option value="1">Edit</option>
+   <option value="2">Delete</option>
+   </select>
+   
+   <input type="submit" value="Apply to all">
+  
+  </div>
+</nav>
+
+
+
+
+<!--Table-->
+
+<section class="gallery">
+	<div class="title">
+		<label>Paintings</label>
+	</div>
+	<br>
+	<div class="pictures">
+		<table>
+		<thead>
+			<tr>
+			    <th></th>
+			    <th></th>
+				<th>Title</th>
+				<th>Artist</th>
+				<th>Year</th>
+				<th>Genre</th>
+				<th>Actions</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+			    <td>
+			    
+			    
+			    <input type="checkbox" name="index[]" value="1">
+			    
+			    </td>
+			    
+			    <td><img src="image/img1.jpg" width="40" height="60"></td>
+				<td><i><small>Death of Marat</small></i></td>
+				<td><small>David, Jacques-Louis</small></td>
+				<td><small>1793</small></td>
+				<td><small>Romanticism</small></td>
+				<td><button name="button" value="archive"><img src="icons/icon1.png" width="15px" height="15px"></button>
+				    <button name="button" value="edit"><img src="icons/icon2.png" width="15px" height="15px"></button>
+				    <button name="button" value="remove"><img src="icons/icon3.png" width="15px" height="15px"></button>
+				    <button name="button" value="file"><img src="icons/icon4.png" width="15px" height="15px"></button>
+				</td>
+			</tr>
+
+			
+			<tr>
+				<td><input type="checkbox" name="index[]" value="2"></td>
+				<td><img src="image/img2.jpg" width="40" height="60"></td>
+				<td><i><small>Portrait of Eleonor of Toledo</small></i></td>
+				<td><small>Bronzino, Agnolo</small></td>
+				<td><small>1545</small></td>
+				<td><small>Mannerism</small></td>
+			<td><button name="button" value="archive"><img src="icons/icon1.png" width="15px" height="15px"></button>
+			<button name="button" value="edit"><img src="icons/icon2.png" width="15px" height="15px"></button>
+			<button name="button" value="remove"><img src="icons/icon3.png" width="15px" height="15px"></button>
+			<button name="button" value="file"><img src="icons/icon4.png" width="15px" height="15px"></button>
+				
+				</td>
+			</tr>
+			
+			<tr>
+			<td><input type="checkbox" name="index[]" value="3"></td>
+			<td><img src="image/img3.jpg" width="40" height="60"></td>
+			<td><i><small>Liberty Leading the People</small></i></td>
+			<td><small>Delacroix, Eugene </small></td>
+			<td><small>1830</small></td>
+			<td><small>Romanticism</small></td>
+			<td><button name="button" value="archive"><img src="icons/icon1.png" width="15px" height="15px"></button>
+			<button name="button" value="edit"><img src="icons/icon2.png" width="15px" height="15px"></button>
+			<button name="button" value="remove"><img src="icons/icon3.png" width="15px" height="15px"></button>
+			<button name="button" value="file"><img src="icons/icon4.png" width="15px" height="15px"></button>
+			
+			</td>
+			</tr>
+			
+			</tr>
+			
+			<tr>
+			<td><input type="checkbox" name="index[]" value="4"></td>
+			<td><img src="image/img4.jpg" width="40" height="60"></td>
+			<td><i><small>Arrangement in Grey and Black</small></i></td>
+			<td><small>Whistler, James Abbott</small></td>
+			<td><small>1871</small></td>
+			<td><small>Realism</small></td>
+			<td><button name="button" value="archive"><img src="icons/icon1.png" width="15px" height="15px"></button>
+			<button name="button" value="edit"><img src="icons/icon2.png" width="15px" height="15px"></button>
+			<button name="button" value="remove"><img src="icons/icon3.png" width="15px" height="15px"></button>
+			<button name="button" value="file"><img src="icons/icon4.png" width="15px" height="15px"></button>
+			
+			</td>
+			
+			</tr>
+			
+			
+			<tr>
+			<td><input type="checkbox" name="index[]" value="5"></td>
+			<td><img src="image/img5.jpg" width="40" height="60"></td>
+			<td><i><small>Mademoiselle Caroline Riviere</small></i></td>
+			<td><small>Ingres, Jean-Auguste</small></td>
+			<td><small>1806</small></td>
+			<td><small>Neo-Classicism</small></td>
+			<td><button name="button" value="archive"><img src="icons/icon1.png" width="15px" height="15px"></button>
+			<button name="button" value="edit"><img src="icons/icon2.png" width="15px" height="15px"></button>
+			<button name="button" value="remove"><img src="icons/icon3.png" width="15px" height="15px"></button>
+			<button name="button" value="file"><img src="icons/icon4.png" width="15px" height="15px"></button>
+			
+			</td>
+			</tr>
+			
+			
+			
+		</tbody>
+		</table>
+		
+	</div>
+
+</section>
+
+ </form>
+</body>
+</html>
+
+<!--
+Portrait of Eleonor of Toledo
+Bronzino, Agnolo
+1545
+Mannerism
+
+
+Liberty Leading the People
+Delacroix, Eugene 
+1830
+Romanticism
+
+Arrangement in Grey and Black
+Whistler, James Abbott
+1871
+Realism
+
+Mademoiselle Caroline Riviere 
+Ingres, Jean-Auguste
+1806
+Neo-Classicism
+-->
